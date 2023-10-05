@@ -20,7 +20,8 @@ Font.register({
 const PageOne: React.FC = () => {
 	return (
 		// <Document>
-		<Page size="A4" style={styles.body} wrap>
+		// <Page size="A4" style={styles.body} wrap>
+		<View style={[styles.body]}>
 			{/* Header */}
 			<View style={styles.tableHeader}>
 				<View
@@ -337,7 +338,7 @@ const PageOne: React.FC = () => {
 				</View>
 			</View>
 			{/* content8 */}
-			<View>
+			<View wrap={false} style={{ marginTop: "20px" }}>
 				<View style={[styles.flexRow, styles.normal]}>
 					<Text style={{ marginRight: "5px" }}>8.</Text>
 					<div>
@@ -396,8 +397,8 @@ const PageOne: React.FC = () => {
 					</div>
 				</View>
 			</View>
-		</Page>
-		// </Document>
+		</View>
+		// </Page>
 	);
 };
 

@@ -9,7 +9,7 @@ function App() {
 			{/* <PDFDownloadLink document={<PageOne/ >} fileName='pageone.pdf'>
       {({ loading }) => (loading ? 'Loading document...' : 'Download now!')}
       </PDFDownloadLink> */}
-			<PDFViewer style={{ width: "100%", height: "100vh" }}>
+			<PDFViewer style={{ width: "100%", height: "297mm" }}>
 				<ExportALL />
 				{/* <PageOne/> */}
 				{/* <TableExample/> */}
