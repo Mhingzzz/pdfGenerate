@@ -23,7 +23,7 @@ const PageOne: React.FC = () => {
 		// <Page size="A4" style={styles.body} wrap>
 		<View style={[styles.body]}>
 			{/* Header */}
-			<View style={styles.tableHeader}>
+			<View style={[styles.tableHeader, { marginTop: "20px" }]}>
 				<View
 					style={{
 						border: "1px solid black",
@@ -280,7 +280,7 @@ const PageOne: React.FC = () => {
 				</View>
 			</View>
 			{/* content7 */}
-			<View>
+			<View wrap={false}>
 				<Text style={styles.bold}>รายได้และทุนอื่นๆ ที่เคยได้รับ</Text>
 				<View style={[styles.flexRow, styles.normal]}>
 					<Text style={{ marginRight: "5px" }}>7.</Text>

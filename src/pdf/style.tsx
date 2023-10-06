@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
 		// height: "297mm",
 		// padding: "40px",
 		flexDirection: "column",
-		// marginBottom: "20px",
+		marginBottom: "20px",
 	},
 	tableHeader: {
 		display: "flex",
