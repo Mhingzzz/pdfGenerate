@@ -17,9 +17,8 @@ const ExportALL: React.FC = () => {
 				<PageTwo />
 				<PageThree />
 				<PageFour />
-				{/*
 				<PageFive />
-				<PageSix /> */}
+				<PageSix />
 			</Page>
 		</Document>
 	);

@@ -347,6 +347,7 @@ const PageTwo: React.FC = () => {
 							<Text style={styles.space200px}>ชื่อโรค</Text>
 							<Text>ปีที่ตรวจพบ</Text>
 						</View>
+						<View style={styles.hr} />
 					</View>
 				</View>
 			</View>

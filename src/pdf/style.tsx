@@ -170,6 +170,11 @@ const styles = StyleSheet.create({
 	space50px: {
 		width: "50px",
 	},
+	hr: {
+		border: "0.5px solid black",
+
+		marginTop: "5px",
+	},
 });
 
 export default styles;

@@ -23,6 +23,7 @@ const PageOne: React.FC = () => {
 		// <Page size="A4" style={styles.body} wrap>
 		<View style={[styles.body]}>
 			{/* Header */}
+
 			<View style={[styles.tableHeader, { marginTop: "20px" }]}>
 				<View
 					style={{
@@ -43,13 +44,13 @@ const PageOne: React.FC = () => {
 						alignItems: "center",
 					}}
 				>
-					<div style={{ width: "100px", height: "100px" }}>
+					<View style={{ width: "100px", height: "100px" }}>
 						<Image src="/camt_cmu_logo_th.JPG" style={{ objectFit: "cover" }} />
-					</div>
-					<div style={styles.bold}>
+					</View>
+					<View style={styles.bold}>
 						<Text>แบบขอรับทุนการศึกษา ปีการศึกษา 2566</Text>
 						<Text>คณะวิศวกรรมศาสตร์ มหาวิทยาลัยเชียงใหม่</Text>
-					</div>
+					</View>
 				</View>
 
 				<View
@@ -59,7 +60,7 @@ const PageOne: React.FC = () => {
 					]}
 				>
 					<Text style={styles.bold}>เลขที่สมัคร {mockData.regisNum}</Text>
-					<div />
+					<View />
 					<Text style={styles.bold}>รายใหม่</Text>
 					<br />
 					<Text>{mockData.studentID}</Text>
@@ -73,7 +74,7 @@ const PageOne: React.FC = () => {
 				<Text style={styles.bold}>ข้อมูลพื้นฐาน</Text>
 				<View style={[styles.flexRow, { gap: "5px" }]}>
 					<Text>1.</Text>
-					<div>
+					<View>
 						<View style={[styles.flexRow, { gap: "5px" }]}>
 							<Text style={styles.space150px}>ชื่อ {mockData.firstName}</Text>
 
@@ -107,7 +108,7 @@ const PageOne: React.FC = () => {
 								ผู้สมัครเป็นคนแรกในครอบครัวที่ได้ศึกษาในระดับอุดมศึกษา
 							</Text>
 						</View>
-					</div>
+					</View>
 				</View>
 			</View>
 			{/* content2 */}
@@ -116,7 +117,7 @@ const PageOne: React.FC = () => {
 
 				<View style={[styles.flexRow, styles.normal, { gap: "5px" }]}>
 					<Text>2.</Text>
-					<div>
+					<View>
 						<View style={[styles.flexRow]}>
 							<Text style={styles.space150px}>ชื่อที่พัก {mockData.Major}</Text>
 							<Text style={styles.space100px}>หมายเลขห้อง {mockData.age}</Text>
@@ -128,7 +129,7 @@ const PageOne: React.FC = () => {
 							</Text>
 							<Text>ค่าเช่าที่พัก {mockData.money} บาท/คน/เดือน</Text>
 						</View>
-					</div>
+					</View>
 				</View>
 			</View>
 			{/* content3 */}
@@ -139,7 +140,7 @@ const PageOne: React.FC = () => {
 
 				<View style={[styles.flexRow, styles.normal, { gap: "5px" }]}>
 					<Text>3.</Text>
-					<div>
+					<View>
 						<View style={[styles.flexRow]}>
 							<Text style={styles.space300px}>
 								ชนิดยานพาหนะ {mockData.birthDate}
@@ -152,7 +153,7 @@ const PageOne: React.FC = () => {
 							</Text>
 							<Text>ยี่ห้อยานพาหนะ {mockData.Major}</Text>
 						</View>
-					</div>
+					</View>
 				</View>
 			</View>
 			{/* content4 */}
@@ -161,7 +162,7 @@ const PageOne: React.FC = () => {
 
 				<View style={[styles.flexRow, styles.normal, { gap: "5px" }]}>
 					<Text>4.</Text>
-					<div>
+					<View>
 						<View style={styles.flexRow}>
 							<Text style={styles.space100px}>
 								บ้านเลขที่ {mockData.houseNo}
@@ -184,7 +185,7 @@ const PageOne: React.FC = () => {
 						<view>
 							<Text>หมายโทรศัพท์บ้าน {mockData.phone}</Text>
 						</view>
-					</div>
+					</View>
 				</View>
 			</View>
 			{/* content5-6 */}
@@ -195,7 +196,7 @@ const PageOne: React.FC = () => {
 
 				<View style={[styles.flexRow, styles.normal, { gap: "5px" }]}>
 					<Text>5.</Text>
-					<div>
+					<View>
 						//width: 83 17
 						<View style={[styles.flexRowBetween]}>
 							<Text style={[styles.rowStyle83]}>
@@ -245,11 +246,11 @@ const PageOne: React.FC = () => {
 								<Text>บาท</Text>
 							</View>
 						</View>
-					</div>
+					</View>
 				</View>
 				<View style={[styles.flexRow, styles.normal, { gap: "5px" }]}>
 					<Text>6.</Text>
-					<div>
+					<View>
 						<View style={styles.flexRowBetween}>
 							<Text style={styles.rowStyle70}>ผู้อุปการะค่าใช้จ่าย</Text>
 							<View style={[styles.rowStyle30]}>
@@ -276,7 +277,7 @@ const PageOne: React.FC = () => {
 								<Text>บาท</Text>
 							</View>
 						</View>
-					</div>
+					</View>
 				</View>
 			</View>
 			{/* content7 */}
@@ -284,7 +285,7 @@ const PageOne: React.FC = () => {
 				<Text style={styles.bold}>รายได้และทุนอื่นๆ ที่เคยได้รับ</Text>
 				<View style={[styles.flexRow, styles.normal]}>
 					<Text style={{ marginRight: "5px" }}>7.</Text>
-					<div>
+					<View>
 						<Text>ทุนอื่นๆ ที่เคยได้รับตั้งแต่ชั้น ม.6</Text>
 						//table 20 60 20
 						<View style={[styles.flexRow]}>
@@ -293,7 +294,7 @@ const PageOne: React.FC = () => {
 								<View style={[styles.tableLeft, { height: "auto" }]}>
 									<Text>ปีที่ได้รับ</Text>
 								</View>
-								<div>
+								<View>
 									{mockData.scholarName.map((data, index) => {
 										return (
 											<View style={[styles.tableRowLeft]}>
@@ -301,7 +302,7 @@ const PageOne: React.FC = () => {
 											</View>
 										);
 									})}
-								</div>
+								</View>
 							</View>
 							{/* //column 2 */}
 							<View style={{ width: "60%" }}>
@@ -334,19 +335,19 @@ const PageOne: React.FC = () => {
 								</>
 							</View>
 						</View>
-					</div>
+					</View>
 				</View>
 			</View>
 			{/* content8 */}
 			<View wrap={false} style={{ marginTop: "20px" }}>
 				<View style={[styles.flexRow, styles.normal]}>
 					<Text style={{ marginRight: "5px" }}>8.</Text>
-					<div>
+					<View>
 						<Text>ประวัติการทำงานหารายได้ระหว่างศึกษา</Text>
 						<View style={[styles.flexRow]}>
-							<div style={styles.flexJustCenter}>
+							<View style={styles.flexJustCenter}>
 								<View style={styles.bullet}></View>
-							</div>
+							</View>
 							<Text style={styles.space200px}>ลักษณะงาน</Text>
 							<Text style={styles.space150px}>ตำแหน่ง</Text>
 							<Text>พ.ศ. ที่ทำงาน</Text>
@@ -361,9 +362,9 @@ const PageOne: React.FC = () => {
 							</View>
 						</View>
 						<View style={[styles.flexRow]}>
-							<div style={styles.flexJustCenter}>
+							<View style={styles.flexJustCenter}>
 								<View style={styles.bullet}></View>
-							</div>
+							</View>
 							<Text style={styles.space200px}>ลักษณะงาน</Text>
 							<Text style={styles.space150px}>ตำแหน่ง</Text>
 							<Text>พ.ศ. ที่ทำงาน</Text>
@@ -378,9 +379,9 @@ const PageOne: React.FC = () => {
 							</View>
 						</View>
 						<View style={[styles.flexRow]}>
-							<div style={styles.flexJustCenter}>
+							<View style={styles.flexJustCenter}>
 								<View style={styles.bullet}></View>
-							</div>
+							</View>
 							<Text style={styles.space200px}>ลักษณะงาน</Text>
 							<Text style={styles.space150px}>ตำแหน่ง</Text>
 							<Text>พ.ศ. ที่ทำงาน</Text>
@@ -394,8 +395,9 @@ const PageOne: React.FC = () => {
 								<Text>บาท</Text>
 							</View>
 						</View>
-					</div>
+					</View>
 				</View>
+				<View style={styles.hr} />
 			</View>
 		</View>
 		// </Page>

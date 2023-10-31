@@ -16,7 +16,7 @@ const PageThree: React.FC = () => {
 			<View style={[styles.flexRow, styles.normal, { gap: "5px" }]}>
 				<View></View>
 				<Text>12.</Text>
-				<div>
+				<View>
 					{/* section 1 */}
 					<View wrap={false}>
 						<View style={[styles.flexRow]}>
@@ -39,24 +39,24 @@ const PageThree: React.FC = () => {
 
 						<Text>ยานพาหนะปัจจุบัน</Text>
 						<View style={styles.flexRow}>
-							<div style={styles.flexJustCenter}>
+							<View style={styles.flexJustCenter}>
 								<View style={styles.bullet}></View>
-							</div>
+							</View>
 							<Text style={styles.space200px}>ชนิดยานพาหนะ</Text>
 							<Text>ยี่ห้อยานพาหนะ</Text>
 						</View>
 						<View style={styles.flexRow}>
-							<div style={styles.flexJustCenter}>
+							<View style={styles.flexJustCenter}>
 								<View style={styles.bullet}></View>
-							</div>
+							</View>
 							<Text style={styles.space200px}>ชนิดยานพาหนะ</Text>
 							<Text>ยี่ห้อยานพาหนะ</Text>
 						</View>
 						<Text>การศึกษาปัจจุบัน (หากยังศึกษาอยู่)</Text>
 						<View style={styles.flexRow}>
-							<div style={styles.flexJustCenter}>
+							<View style={styles.flexJustCenter}>
 								<View style={styles.bullet}></View>
-							</div>
+							</View>
 							<Text style={styles.space200px}>ระดับการศึกษา</Text>
 							<Text style={styles.space150px}>สถานศึกษา</Text>
 							<Text>จังหวัด</Text>
@@ -70,9 +70,9 @@ const PageThree: React.FC = () => {
 						</View>
 						<Text>งานปัจจุบัน (หากมีงานทำ)</Text>
 						<View style={styles.flexRow}>
-							<div style={styles.flexJustCenter}>
+							<View style={styles.flexJustCenter}>
 								<View style={styles.bullet}></View>
-							</div>
+							</View>
 							<Text style={styles.space200px}>ลักษณะงาน</Text>
 							<Text style={styles.space150px}>ตำแหน่ง</Text>
 							<Text>พ.ศ. ที่ทำงาน</Text>
@@ -85,9 +85,9 @@ const PageThree: React.FC = () => {
 							<Text>บาท</Text>
 						</View>
 						<View style={styles.flexRow}>
-							<div style={styles.flexJustCenter}>
+							<View style={styles.flexJustCenter}>
 								<View style={styles.bullet}></View>
-							</div>
+							</View>
 							<Text style={styles.space200px}>ลักษณะงาน</Text>
 							<Text>ตำแหน่ง</Text>
 						</View>
@@ -100,16 +100,16 @@ const PageThree: React.FC = () => {
 						</View>
 						<Text>โรคประจำตัว</Text>
 						<View style={styles.flexRow}>
-							<div style={styles.flexJustCenter}>
+							<View style={styles.flexJustCenter}>
 								<View style={styles.bullet}></View>
-							</div>
+							</View>
 							<Text style={styles.space200px}>ชื่อโรค</Text>
 							<Text>ปีที่ตรวจพบ</Text>
 						</View>
 						<View style={styles.flexRow}>
-							<div style={styles.flexJustCenter}>
+							<View style={styles.flexJustCenter}>
 								<View style={styles.bullet}></View>
-							</div>
+							</View>
 							<Text style={styles.space200px}>ชื่อโรค</Text>
 							<Text>ปีที่ตรวจพบ</Text>
 						</View>
@@ -136,24 +136,24 @@ const PageThree: React.FC = () => {
 
 						<Text>ยานพาหนะปัจจุบัน</Text>
 						<View style={styles.flexRow}>
-							<div style={styles.flexJustCenter}>
+							<View style={styles.flexJustCenter}>
 								<View style={styles.bullet}></View>
-							</div>
+							</View>
 							<Text style={styles.space200px}>ชนิดยานพาหนะ</Text>
 							<Text>ยี่ห้อยานพาหนะ</Text>
 						</View>
 						<View style={styles.flexRow}>
-							<div style={styles.flexJustCenter}>
+							<View style={styles.flexJustCenter}>
 								<View style={styles.bullet}></View>
-							</div>
+							</View>
 							<Text style={styles.space200px}>ชนิดยานพาหนะ</Text>
 							<Text>ยี่ห้อยานพาหนะ</Text>
 						</View>
 						<Text>การศึกษาปัจจุบัน (หากยังศึกษาอยู่)</Text>
 						<View style={styles.flexRow}>
-							<div style={styles.flexJustCenter}>
+							<View style={styles.flexJustCenter}>
 								<View style={styles.bullet}></View>
-							</div>
+							</View>
 							<Text style={styles.space200px}>ระดับการศึกษา</Text>
 							<Text style={styles.space150px}>สถานศึกษา</Text>
 							<Text>จังหวัด</Text>
@@ -167,9 +167,9 @@ const PageThree: React.FC = () => {
 						</View>
 						<Text>งานปัจจุบัน (หากมีงานทำ)</Text>
 						<View style={styles.flexRow}>
-							<div style={styles.flexJustCenter}>
+							<View style={styles.flexJustCenter}>
 								<View style={styles.bullet}></View>
-							</div>
+							</View>
 							<Text style={styles.space200px}>ลักษณะงาน</Text>
 							<Text style={styles.space150px}>ตำแหน่ง</Text>
 							<Text>พ.ศ. ที่ทำงาน</Text>
@@ -182,9 +182,9 @@ const PageThree: React.FC = () => {
 							<Text>บาท</Text>
 						</View>
 						<View style={styles.flexRow}>
-							<div style={styles.flexJustCenter}>
+							<View style={styles.flexJustCenter}>
 								<View style={styles.bullet}></View>
-							</div>
+							</View>
 							<Text style={styles.space200px}>ลักษณะงาน</Text>
 							<Text>ตำแหน่ง</Text>
 						</View>
@@ -197,16 +197,16 @@ const PageThree: React.FC = () => {
 						</View>
 						<Text>โรคประจำตัว</Text>
 						<View style={styles.flexRow}>
-							<div style={styles.flexJustCenter}>
+							<View style={styles.flexJustCenter}>
 								<View style={styles.bullet}></View>
-							</div>
+							</View>
 							<Text style={styles.space200px}>ชื่อโรค</Text>
 							<Text>ปีที่ตรวจพบ</Text>
 						</View>
 						<View style={styles.flexRow}>
-							<div style={styles.flexJustCenter}>
+							<View style={styles.flexJustCenter}>
 								<View style={styles.bullet}></View>
-							</div>
+							</View>
 							<Text style={styles.space200px}>ชื่อโรค</Text>
 							<Text>ปีที่ตรวจพบ</Text>
 						</View>
@@ -233,24 +233,24 @@ const PageThree: React.FC = () => {
 
 						<Text>ยานพาหนะปัจจุบัน</Text>
 						<View style={styles.flexRow}>
-							<div style={styles.flexJustCenter}>
+							<View style={styles.flexJustCenter}>
 								<View style={styles.bullet}></View>
-							</div>
+							</View>
 							<Text style={styles.space200px}>ชนิดยานพาหนะ</Text>
 							<Text>ยี่ห้อยานพาหนะ</Text>
 						</View>
 						<View style={styles.flexRow}>
-							<div style={styles.flexJustCenter}>
+							<View style={styles.flexJustCenter}>
 								<View style={styles.bullet}></View>
-							</div>
+							</View>
 							<Text style={styles.space200px}>ชนิดยานพาหนะ</Text>
 							<Text>ยี่ห้อยานพาหนะ</Text>
 						</View>
 						<Text>การศึกษาปัจจุบัน (หากยังศึกษาอยู่)</Text>
 						<View style={styles.flexRow}>
-							<div style={styles.flexJustCenter}>
+							<View style={styles.flexJustCenter}>
 								<View style={styles.bullet}></View>
-							</div>
+							</View>
 							<Text style={styles.space200px}>ระดับการศึกษา</Text>
 							<Text style={styles.space150px}>สถานศึกษา</Text>
 							<Text>จังหวัด</Text>
@@ -264,9 +264,9 @@ const PageThree: React.FC = () => {
 						</View>
 						<Text>งานปัจจุบัน (หากมีงานทำ)</Text>
 						<View style={styles.flexRow}>
-							<div style={styles.flexJustCenter}>
+							<View style={styles.flexJustCenter}>
 								<View style={styles.bullet}></View>
-							</div>
+							</View>
 							<Text style={styles.space200px}>ลักษณะงาน</Text>
 							<Text style={styles.space150px}>ตำแหน่ง</Text>
 							<Text>พ.ศ. ที่ทำงาน</Text>
@@ -279,9 +279,9 @@ const PageThree: React.FC = () => {
 							<Text>บาท</Text>
 						</View>
 						<View style={styles.flexRow}>
-							<div style={styles.flexJustCenter}>
+							<View style={styles.flexJustCenter}>
 								<View style={styles.bullet}></View>
-							</div>
+							</View>
 							<Text style={styles.space200px}>ลักษณะงาน</Text>
 							<Text>ตำแหน่ง</Text>
 						</View>
@@ -294,21 +294,22 @@ const PageThree: React.FC = () => {
 						</View>
 						<Text>โรคประจำตัว</Text>
 						<View style={styles.flexRow}>
-							<div style={styles.flexJustCenter}>
+							<View style={styles.flexJustCenter}>
 								<View style={styles.bullet}></View>
-							</div>
+							</View>
 							<Text style={styles.space200px}>ชื่อโรค</Text>
 							<Text>ปีที่ตรวจพบ</Text>
 						</View>
 						<View style={styles.flexRow}>
-							<div style={styles.flexJustCenter}>
+							<View style={styles.flexJustCenter}>
 								<View style={styles.bullet}></View>
-							</div>
+							</View>
 							<Text style={styles.space200px}>ชื่อโรค</Text>
 							<Text>ปีที่ตรวจพบ</Text>
 						</View>
 					</View>
-				</div>
+					<View style={styles.hr} />
+				</View>
 			</View>
 		</View>
 

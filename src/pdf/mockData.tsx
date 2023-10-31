@@ -26,15 +26,18 @@ const mockData = {
 	scholarName: [
 		"Scholar championships",
 		"Beatme",
-		"Hello world",
-		"nice guy",
-		"can not be help then",
-		"how to break page",
-		"it's work",
+		// "Hello world",
+		// "nice guy",
+		// "can not be help then",
+		// "how to break page",
+		// "it's work",
+		// "how to break page",
+		// "it's work",
 	],
 	birthYear: "2015",
 	grade: "3.5",
 	table: ["2001", "2015"],
+	currentLevel: [1, 2, 3, 4],
 };
 
 export default mockData;
