@@ -5,8 +5,13 @@ import THSarabunNewBold from "../font/THSarabunNew Bold.ttf";
 import THSarabunNewItalic from "../font/THSarabunNew Italic.ttf";
 //import styles
 import styles from "./style";
-import { mockDataPage1, mockDataPage4 } from "./mockData";
-import calcutionAge, { calculateAgeFromBirthYear } from "./calcutionAge";
+import {
+	mockDataPage1,
+	mockDataPage2,
+	mockDataPage3,
+	mockDataPage4,
+} from "./mockData";
+import calcutionAge from "./calcutionAge";
 
 // Register the Thai font need to change to Saraban when done
 
@@ -48,7 +53,7 @@ const PageOne: React.FC = () => {
 					>
 						<View style={{ width: "100px", height: "100px" }}>
 							<Image
-								src="/camt_cmu_logo_th.JPG"
+								src="/public/RibbinENG1.png"
 								style={{ objectFit: "cover" }}
 							/>
 						</View>
@@ -64,13 +69,13 @@ const PageOne: React.FC = () => {
 							{ textAlign: "right", height: "5.23cm", width: "4cm" },
 						]}
 					>
-						<Text style={styles.bold}>เลขที่สมัคร {mockDataPage1.regNum}</Text>
+						<Text style={styles.bold}>เลขที่สมัคร {mockDataPage2.app_id}</Text>
 						<View />
 						<Text style={styles.bold}>รายใหม่</Text>
 						<br />
-						<Text>{mockDataPage1.student_id}</Text>
+						<Text>{mockDataPage1.page1.student_id}</Text>
 						<br />
-						<Text>พิมพ์วันที่ {mockDataPage1.birth_date}</Text>
+						<Text>พิมพ์วันที่ {mockDataPage1.page1.birth_date}</Text>
 					</View>
 				</View>
 
@@ -82,44 +87,47 @@ const PageOne: React.FC = () => {
 						<View>
 							<View style={[styles.flexRow, { gap: "5px" }]}>
 								<Text style={styles.space150px}>
-									ชื่อ {mockDataPage1.first_name}
+									ชื่อ {mockDataPage1.page1.first_name}
 								</Text>
 
 								<Text style={styles.space150px}>
-									สกุล {mockDataPage1.last_name}
+									สกุล {mockDataPage1.page1.last_name}
 								</Text>
 
 								<Text style={styles.space150px}>
-									ชื่อเล่น {mockDataPage1.nickname}
+									ชื่อเล่น {mockDataPage1.page1.nickname}
 								</Text>
 							</View>
 							<View style={[styles.flexRow]}>
 								<Text style={styles.space150px}>
-									วันเดือนปีเกิด {mockDataPage1.birth_date}
+									วันเดือนปีเกิด {mockDataPage1.page1.birth_date}
 								</Text>
 								<Text style={styles.space100px}>
-									อายุ {calcutionAge(mockDataPage1.birth_date)} ปี
+									อายุ {calcutionAge(mockDataPage1.page1.birth_date)} ปี
 								</Text>
-								<Text> รหัสประจำตัวนักศึกษา {mockDataPage1.student_id}</Text>
+								<Text>
+									{" "}
+									รหัสประจำตัวนักศึกษา {mockDataPage1.page1.student_id}
+								</Text>
 							</View>
 							<View style={[styles.flexRow]}>
 								<Text style={{ width: "275px" }}>
-									สาขาวิชา {mockDataPage1.major_name}
+									สาขาวิชา {mockDataPage1.page1.major_name}
 								</Text>
-								<Text>อาจารย์ที่ปรึกษา {mockDataPage1.advisor_name}</Text>
+								<Text>อาจารย์ที่ปรึกษา {mockDataPage1.page1.advisor_name}</Text>
 							</View>
 							<View style={[styles.flexRow]}>
 								<Text style={styles.space200px}>
-									อีเมล {mockDataPage1.cmu_account}
+									อีเมล {mockDataPage1.page1.cmu_account}
 								</Text>
 								<Text>
 									หมายเลขโทรศัพท์ที่ติดต่อได้สะดวก{" "}
-									{mockDataPage1.phone_no_student}
+									{mockDataPage1.page1.phone_no_student}
 								</Text>
 							</View>
 							<View style={[styles.flexRow]}>
 								<Text style={styles.space150px}>
-									จำนวนเงินทุนที่ขอรับ {mockDataPage1.amount[0].amount}
+									จำนวนเงินทุนที่ขอรับ {mockDataPage1.page1.amount[0].amount}
 								</Text>
 								<Text style={styles.space75px}>บาท/ปีการศึกษา</Text>
 								<Text style={styles.italic}>
@@ -139,21 +147,23 @@ const PageOne: React.FC = () => {
 						<View>
 							<View style={[styles.flexRow]}>
 								<Text style={styles.space150px}>
-									ชื่อที่พัก {mockDataPage1.dorm_name}
+									ชื่อที่พัก {mockDataPage1.page1.dorm_name}
 								</Text>
 								<Text style={styles.space100px}>
-									หมายเลขห้อง {mockDataPage1.dorm_room_no}
+									หมายเลขห้อง {mockDataPage1.page1.dorm_room_no}
 								</Text>
-								<Text style={styles.space100px}>
-									หมายเลขโทรศัพท์ที่พัก{mockDataPage1.dorm_phone}
+								<Text style={styles.space150px}>
+									หมายเลขโทรศัพท์ที่พัก {mockDataPage1.page1.dorm_phone}
 								</Text>
 							</View>
 							<View style={[styles.flexRow]}>
 								<Text style={styles.space150px}>
-									จำนวนผู้พักอาศัยในห้อง {mockDataPage1.dorm_num_occupants} คน
+									จำนวนผู้พักอาศัยในห้อง{" "}
+									{mockDataPage1.page1.dorm_num_occupants} คน
 								</Text>
 								<Text>
-									ค่าเช่าที่พัก {mockDataPage1.dorm_monthly_rate} บาท/คน/เดือน
+									ค่าเช่าที่พัก {mockDataPage1.page1.dorm_monthly_rate}{" "}
+									บาท/คน/เดือน
 								</Text>
 							</View>
 						</View>
@@ -170,7 +180,7 @@ const PageOne: React.FC = () => {
 					<View style={[styles.flexRow, styles.normal, { gap: "5px" }]}>
 						<Text>3.</Text>
 						<View>
-							{mockDataPage1.personal_vehicle.map((data) => {
+							{mockDataPage1.page1.personal_vehicle.map((data) => {
 								return (
 									<View style={[styles.flexRow]}>
 										<Text style={styles.space300px}>
@@ -192,38 +202,41 @@ const PageOne: React.FC = () => {
 						<View>
 							<View style={styles.flexRow}>
 								<Text style={styles.space100px}>
-									บ้านเลขที่ {mockDataPage1.permanent_house_no}
+									บ้านเลขที่ {mockDataPage1.page1.permanent_house_no}
 								</Text>
 								<Text style={styles.space100px}>
-									หมู่ที่ {mockDataPage1.permanent_village_no}
+									หมู่ที่ {mockDataPage1.page1.permanent_village_no}
 								</Text>
-								<Text>หมู่บ้าน {mockDataPage1.permanent_village_name}</Text>
-							</View>
-							<View style={styles.flexRow}>
-								<Text style={styles.space200px}>
-									ซอย {mockDataPage1.permanent_alley}
-								</Text>
-								<Text style={styles.space200px}>
-									ถนน {mockDataPage1.permanent_street}
+								<Text>
+									หมู่บ้าน {mockDataPage1.page1.permanent_village_name}
 								</Text>
 							</View>
 							<View style={styles.flexRow}>
+								<Text style={styles.space200px}>
+									ซอย {mockDataPage1.page1.permanent_alley}
+								</Text>
+								<Text style={styles.space200px}>
+									ถนน {mockDataPage1.page1.permanent_street}
+								</Text>
+							</View>
+							<View style={styles.flexRow}>
 								<Text style={styles.space150px}>
-									ตำบล {mockDataPage1.permanent_subdistrict}
+									ตำบล {mockDataPage1.page1.permanent_subdistrict}
 								</Text>
 								<Text style={styles.space150px}>
-									อำเภอ {mockDataPage1.permanent_district}
+									อำเภอ {mockDataPage1.page1.permanent_district}
 								</Text>
 								<Text style={styles.space150px}>
-									จังหวัด {mockDataPage1.permanent_province}
+									จังหวัด {mockDataPage1.page1.permanent_province}
 								</Text>
 								<Text style={styles.space150px}>
-									รหัสไปรษณีย์ {mockDataPage1.permanent_postal_code}
+									รหัสไปรษณีย์ {mockDataPage1.page1.permanent_postal_code}
 								</Text>
 							</View>
 							<view>
 								<Text>
-									หมายโทรศัพท์บ้าน {mockDataPage1.permanent_phone_no_address}
+									หมายโทรศัพท์บ้าน{" "}
+									{mockDataPage1.page1.permanent_phone_no_address}
 								</Text>
 							</view>
 						</View>
@@ -244,14 +257,14 @@ const PageOne: React.FC = () => {
 									ค่าเช่าที่พัก (รวมค่าน้ำ ค่าไฟ และค่าอินเทอร์เน็ต)
 								</Text>
 								<View style={[styles.rowStyle17]}>
-									<Text>{mockDataPage1.amount[3].amount}</Text>
+									<Text>{mockDataPage1.page1.amount[3].amount}</Text>
 									<Text>บาท</Text>
 								</View>
 							</View>
 							<View style={[styles.flexRowBetween]}>
 								<Text style={[styles.rowStyle83]}>ค่าอาหาร</Text>
 								<View style={[styles.rowStyle17]}>
-									<Text>{mockDataPage1.amount[1].amount}</Text>
+									<Text>{mockDataPage1.page1.amount[1].amount}</Text>
 									<Text>บาท</Text>
 								</View>
 							</View>
@@ -260,21 +273,21 @@ const PageOne: React.FC = () => {
 									ค่าเดินทางและบำรุงรักษายานพาหนะ
 								</Text>
 								<View style={[styles.rowStyle17]}>
-									<Text>{mockDataPage1.amount[4].amount}</Text>
+									<Text>{mockDataPage1.page1.amount[4].amount}</Text>
 									<Text>บาท</Text>
 								</View>
 							</View>
 							<View style={[styles.flexRowBetween]}>
 								<Text style={[styles.rowStyle83]}>ค่าอุปกรณ์การศึกษา</Text>
 								<View style={[styles.rowStyle17]}>
-									<Text>{mockDataPage1.amount[5].amount}</Text>
+									<Text>{mockDataPage1.page1.amount[5].amount}</Text>
 									<Text>บาท</Text>
 								</View>
 							</View>
 							<View style={[styles.flexRowBetween]}>
 								<Text style={[styles.rowStyle83]}>ค่าใช้จ่ายส่วนตัวอื่นๆ</Text>
 								<View style={[styles.rowStyle17]}>
-									<Text>{mockDataPage1.amount[2].amount}</Text>
+									<Text>{mockDataPage1.page1.amount[2].amount}</Text>
 									<Text>บาท</Text>
 								</View>
 							</View>
@@ -284,7 +297,7 @@ const PageOne: React.FC = () => {
 								<View style={[styles.rowStyle30]}>
 									<Text>เดือนละ</Text>
 									<Text>
-										{mockDataPage1.amount.reduce((a, b) => {
+										{mockDataPage1.page1.amount.reduce((a, b) => {
 											return a + b.amount;
 										}, 0)}
 									</Text>
@@ -297,13 +310,13 @@ const PageOne: React.FC = () => {
 					<View style={[styles.flexRow, styles.normal, { gap: "5px" }]}>
 						<Text>6.</Text>
 						<View>
-							{mockDataPage1.sponsor.map((data) => {
+							{mockDataPage3.sponsors.map((data) => {
 								return (
 									<View style={styles.flexRowBetween}>
 										<Text style={styles.rowStyle70}>ผู้อุปการะค่าใช้จ่าย</Text>
 										<View style={[styles.rowStyle30]}>
 											<Text>เดือนละ</Text>
-											<Text>{data.amount}</Text>
+											<Text>{data.monthly_allowance}</Text>
 											<Text>บาท</Text>
 										</View>
 									</View>
@@ -407,7 +420,7 @@ const PageOne: React.FC = () => {
 							})}
 						</View>
 					</View>
-					<View style={styles.hr} />
+					{/* <View style={styles.hr} /> */}
 				</View>
 			</View>
 		</Page>

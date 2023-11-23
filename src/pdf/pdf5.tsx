@@ -1,10 +1,8 @@
 import React from "react";
 import { Page, Text, View } from "@react-pdf/renderer";
 
-//import styles
 import styles from "./style";
-//import mockData
-import mockData from "./mockData";
+import mockData, { mockDataPage4 } from "./mockData";
 // Register the Thai font need to change to Saraban when done
 
 const PageFive: React.FC = () => {
@@ -15,9 +13,23 @@ const PageFive: React.FC = () => {
 				<Text style={styles.bold}>ประวัติการศึกษา</Text>
 				<View style={[styles.flexRow, { gap: "5px" }]}>
 					<Text>14.</Text>
-					<Text style={styles.space350px}>จบมัธยมศึกษาตอนปลายจากโรงเรียน</Text>
-					<Text style={styles.space100px}>จังหวัด {mockData.county}</Text>
-					<Text style={styles.space50px}>GPA {3.5}</Text>
+					<Text style={styles.space350px}>
+						จบมัธยมศึกษาตอนปลายจากโรงเรียน{" "}
+						{
+							mockDataPage4.academic_history_table.high_school_record
+								.high_school_name
+						}
+					</Text>
+					<Text style={styles.space100px}>
+						จังหวัด{" "}
+						{
+							mockDataPage4.academic_history_table.high_school_record
+								.high_school_province
+						}
+					</Text>
+					<Text style={styles.space50px}>
+						GPA {mockDataPage4.academic_history_table.high_school_record.gpax}
+					</Text>
 				</View>
 				<View style={[styles.flexRow, { gap: "5px" }]}>
 					<Text>15.</Text>
@@ -30,10 +42,10 @@ const PageFive: React.FC = () => {
 							<Text>ปีที่เข้าศึกษา</Text>
 						</View>
 
-						{mockData.scholarName.map((data) => {
+						{mockDataPage4.other_college_enrollments.map((data) => {
 							return (
 								<View style={[styles.tableRowLeft]}>
-									<Text>{data}</Text>
+									<Text>{data.entry_year}</Text>
 								</View>
 							);
 						})}
@@ -42,10 +54,10 @@ const PageFive: React.FC = () => {
 						<View style={[styles.tableMiddle]}>
 							<Text>มหาวิทยาลัย</Text>
 						</View>
-						{mockData.scholarName.map((data) => {
+						{mockDataPage4.other_college_enrollments.map((data) => {
 							return (
 								<View style={[styles.tableRowMiddle]}>
-									<Text>{data}</Text>
+									<Text>{data.college_name}</Text>
 								</View>
 							);
 						})}
@@ -54,10 +66,10 @@ const PageFive: React.FC = () => {
 						<View style={[styles.tableRight]}>
 							<Text>คณะ</Text>
 						</View>
-						{mockData.scholarName.map((data) => {
+						{mockDataPage4.other_college_enrollments.map((data) => {
 							return (
 								<View style={[styles.tableRowRight]}>
-									<Text>{data}</Text>
+									<Text>{data.faculty_name}</Text>
 								</View>
 							);
 						})}
@@ -66,10 +78,10 @@ const PageFive: React.FC = () => {
 						<View style={[styles.tableRight]}>
 							<Text>สาขาวิชา</Text>
 						</View>
-						{mockData.scholarName.map((data) => {
+						{mockDataPage4.other_college_enrollments.map((data) => {
 							return (
 								<View style={[styles.tableRowRight]}>
-									<Text>{data}</Text>
+									<Text>{data.major_name}</Text>
 								</View>
 							);
 						})}
@@ -78,10 +90,10 @@ const PageFive: React.FC = () => {
 						<View style={[styles.tableRight]}>
 							<Text>ระยะเวลาที่ศึกษา</Text>
 						</View>
-						{mockData.scholarName.map((data) => {
+						{mockDataPage4.other_college_enrollments.map((data) => {
 							return (
 								<View style={[styles.tableRowRight]}>
-									<Text>{data}</Text>
+									<Text>{data.enrollment_duration}</Text>
 								</View>
 							);
 						})}
@@ -90,10 +102,10 @@ const PageFive: React.FC = () => {
 						<View style={[styles.tableRight]}>
 							<Text>GPA</Text>
 						</View>
-						{mockData.scholarName.map((data) => {
+						{mockDataPage4.other_college_enrollments.map((data) => {
 							return (
 								<View style={[styles.tableRowRight]}>
-									<Text>{data}</Text>
+									<Text>{data.gpax}</Text>
 								</View>
 							);
 						})}

@@ -271,9 +271,17 @@ const PageTwo: React.FC = () => {
 							</View>
 
 							<Text>ยานพาหนะปัจจุบัน</Text>
-							{mockDataPage2.cur_dad.vehicles.map((data) => {
-								return (
-									<View style={styles.flexRow}>
+							{mockDataPage2.cur_dad.vehicles.length === 0 ? (
+								<View style={styles.flexRow}>
+									<div style={styles.flexJustCenter}>
+										<View style={styles.bullet}></View>
+									</div>
+									<Text style={styles.space200px}>ชนิดยานพาหนะ</Text>
+									<Text>ยี่ห้อยานพาหนะ</Text>
+								</View>
+							) : (
+								mockDataPage2.cur_dad.vehicles.map((data, index) => (
+									<View key={index} style={styles.flexRow}>
 										<div style={styles.flexJustCenter}>
 											<View style={styles.bullet}></View>
 										</div>
@@ -282,8 +290,8 @@ const PageTwo: React.FC = () => {
 										</Text>
 										<Text>ยี่ห้อยานพาหนะ {data.vehicle_make}</Text>
 									</View>
-								);
-							})}
+								))
+							)}
 
 							<Text>งานปัจจุบัน</Text>
 							{mockDataPage2.cur_dad.jobs.map((data) => {
@@ -426,7 +434,7 @@ const PageTwo: React.FC = () => {
 								);
 							})}
 
-							<View style={styles.hr} />
+							{/* <View style={styles.hr} /> */}
 						</View>
 					</View>
 				</View>
