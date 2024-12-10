@@ -1,0 +1,335 @@
+{
+	"page0": {
+		"mapHandPath": "https://servicescholarship.eng.cmu.ac.th/image/staging/3261/mapHand/808487ff-e213-4886-8946-9a4d03da4d5a.jpg",
+		"mugshotPath": "https://servicescholarship.eng.cmu.ac.th/image/staging/3261/mugshot/72433d9a-3b49-4b31-a8e9-c89e4b78c7cb.jpg",
+		"idCardPath": "https://servicescholarship.eng.cmu.ac.th/image/staging/3261/idCard/6b27ed86-87eb-41f5-8844-252e733fbd6c.jpg",
+		"bookBankPath": "https://servicescholarship.eng.cmu.ac.th/image/staging/3261/bookBank/c1725274-e9a9-4856-bd67-c8d5e5673f6b.jpg",
+		"advisorSignaturePath": "https://servicescholarship.eng.cmu.ac.th/image/staging/3261/advisorSignature/88b5c9bb-98ae-4bcd-b80c-c967cf73974b.jpg"
+	},
+	"page1": {
+		"prefix": "นาย",
+		"first_name": "ภีระพัฒน์",
+		"last_name": "บุญนัด",
+		"nickname": "ปลื้ม",
+		"birth_date": "2004-04-11",
+		"student_id": "660610195",
+		"major_name": "Electrical Engineering",
+		"advisor_name": "ศ.ดร.ยุทธนา ขำสุวรรณ์",
+		"cmu_account": "pheeraphat_boonnat@cmu.ac.th",
+		"phone_no_student": "0968687308",
+		"personal_vehicle": [
+			{
+				"person_vehicle_id": 8655,
+				"vehicle_type": "รถจักรยานยนต์",
+				"vehicle_make": "Honda"
+			}
+		],
+		"dorm": {
+			"dorm_id": 3249,
+			"app_id": 3261,
+			"dorm_name": "หอพักกังสดาล",
+			"dorm_room_no": "104",
+			"dorm_monthly_rate": 2000,
+			"dorm_num_occupants": 1,
+			"dorm_phone": "0959075677"
+		},
+		"current_address": {
+			"addr_id": 2069,
+			"house_no": "68",
+			"village_no": "8",
+			"village_name": "หนองแสะ",
+			"alley": "4",
+			"street": "เชียงใหม่-พร้าว",
+			"subdistrict": "แม่แฝก",
+			"district": "สันทราย",
+			"province": "เชียงใหม่",
+			"postal_code": "50290",
+			"phone_no": "",
+			"latitude": 19.01492,
+			"longitude": 98.96964799999999,
+			"map_img": "808487ff-e213-4886-8946-9a4d03da4d5a.jpg"
+		},
+		"permanent_address": {
+			"addr_id": 2068,
+			"house_no": "68",
+			"village_no": "8",
+			"village_name": "หนองแสะ",
+			"alley": "4",
+			"street": "เชียงใหม่-พร้าว",
+			"subdistrict": "แม่แฝก",
+			"district": "สันทราย",
+			"province": "เชียงใหม่",
+			"postal_code": "50290",
+			"phone_no": "",
+			"latitude": 19.01492,
+			"longitude": 98.96964799999999,
+			"map_img": ""
+		},
+		"first_uni": false,
+		"amount": [
+			{
+				"type_expense": 1,
+				"amount": 4000
+			},
+			{
+				"type_expense": 2,
+				"amount": 1000
+			},
+			{
+				"type_expense": 3,
+				"amount": 2500
+			},
+			{
+				"type_expense": 4,
+				"amount": 1500
+			},
+			{
+				"type_expense": 5,
+				"amount": 500
+			}
+		],
+		"requested_spec_id": 6,
+		"check": {
+			"in_DB": true
+		}
+	},
+	"page2": {
+		"app_id": "3261",
+		"birth_order": 2,
+		"parent_status": {
+			"bioDadAlive": 1,
+			"bioMomAlive": 1,
+			"famStatus": 0,
+			"guardian": 0,
+			"hasCurDad": 0,
+			"hasCurMom": 0
+		},
+		"bio_dad": {
+			"parent_profile": {
+				"firstname": "เดช",
+				"lastname": "บุญนัด",
+				"gender": "ชาย",
+				"birth_year": "1965",
+				"highest_edu_level": "มัธยมศึกษาหรือเทียบเท่า",
+				"phone_no": "0856158752",
+				"death_year": "",
+				"sort_order": 1
+			},
+			"vehicles": [
+				{
+					"vehicle_type": "รถยนต์",
+					"vehicle_make": "Nissan"
+				}
+			],
+			"medicals": [
+				{
+					"disease": "ความดัน",
+					"disease_onset_year": "2010"
+				}
+			],
+			"jobs": [
+				{
+					"occupation": "-",
+					"job_title": "ทำสวน",
+					"employer": "-",
+					"job_start_year": "2003",
+					"job_end_year": "",
+					"monthly_earning": 4000
+				}
+			]
+		},
+		"bio_mom": {
+			"parent_profile": {
+				"firstname": "นงค์คราญ",
+				"lastname": "บุญนัด",
+				"gender": "หญิง",
+				"birth_year": "1970",
+				"highest_edu_level": "ไม่มีวุฒิการศึกษา",
+				"phone_no": "0914786686",
+				"death_year": "",
+				"sort_order": 2
+			},
+			"vehicles": [
+				{
+					"vehicle_type": "รถจักรยานยนต์",
+					"vehicle_make": "Honda"
+				}
+			],
+			"medicals": [],
+			"jobs": [
+				{
+					"occupation": "ทำความสะอาด",
+					"job_title": "แม่บ้าน",
+					"employer": "โรงพยาบาลธัญญารักษ์",
+					"job_start_year": "2021",
+					"job_end_year": "",
+					"monthly_earning": 8320
+				}
+			]
+		},
+		"cur_dad": null,
+		"cur_mom": null,
+		"siblings": [
+			{
+				"sibling_profile": {
+					"profile_sib_id": 1594,
+					"app_id": 3261,
+					"person_id": "8982e2db-746d-4c56-9896-61e54b4a52dc",
+					"sibling_birth_order": "0",
+					"rel_id": 7148,
+					"firstname": "สิริสกุล",
+					"lastname": "บุญนัด",
+					"birth_year": "1994",
+					"death_year": "",
+					"highest_edu_level": "ปริญญาตรี",
+					"sibling_marital_status_is": 1953,
+					"marital_status": 1,
+					"num_children": 0,
+					"gender": "หญิง",
+					"phone_no": "0631861554"
+				},
+				"education": null,
+				"vehicles": [
+					{
+						"vehicle_type": "รถยนต์",
+						"vehicle_make": "Honda"
+					}
+				],
+				"medicals": [],
+				"jobs": [
+					{
+						"occupation": "ฝ่ายเอกสาร",
+						"job_title": "ธุรการทั่วไป",
+						"employer": "ดอนแก้ว 999 Constructionn",
+						"job_start_year": "2020",
+						"job_end_year": "",
+						"monthly_earning": 11000
+					}
+				],
+				"num_children": 0,
+				"marital_status_id": 1
+			}
+		],
+		"sibling_count": 2
+	},
+	"page3": {
+		"app_id": "3261",
+		"sponsors": [
+			{
+				"relation": "แม่",
+				"monthly_allowance": 2500,
+				"sponsor_profile": {
+					"parent_profile": {
+						"firstname": "นงค์คราญ",
+						"lastname": "บุญนัด",
+						"gender": "หญิง",
+						"birth_year": "1970",
+						"highest_edu_level": "ไม่มีวุฒิการศึกษา",
+						"phone_no": "0914786686",
+						"death_year": "-"
+					},
+					"vehicles": [
+						{
+							"vehicle_type": "รถจักรยานยนต์",
+							"vehicle_make": "Honda"
+						}
+					],
+					"medicals": [],
+					"jobs": [
+						{
+							"occupation": "ทำความสะอาด",
+							"job_title": "แม่บ้าน",
+							"employer": "ที่โรงพยาบาลธัญญารักษ์",
+							"job_start_year": "2021",
+							"job_end_year": "",
+							"monthly_earning": 8320
+						}
+					]
+				},
+				"dwelling_cat_id": 1,
+				"additional_info": 0,
+				"debts": [
+					{
+						"spon_debt_id": 2416,
+						"profile_sponsor_id": 2708,
+						"debt_description": "หนี้ในระบบ",
+						"debt_amount": 1400000
+					}
+				],
+				"dependents": []
+			}
+		]
+	},
+	"page4": {
+		"high_school_record": {
+			"high_school_name": "ยุพราชวิทยาลัย",
+			"high_school_province": "เชียงใหม่",
+			"gpax": 3.88,
+			"gpa_6_1": 3.87,
+			"gpa_6_2": 3.89
+		},
+		"cmu_school_records": [
+			{
+				"year": "2566",
+				"semester1": 3.63,
+				"semester1x": 3.63,
+				"semester2": 3.93,
+				"semester2x": 3.78,
+				"semester3": null,
+				"semester3x": null,
+				"granted_monthly_allowance": true,
+				"granted_tuition": true,
+				"scholarship_sum": 15000,
+				"work_location": "ภาควิชาวิศวกรรมไฟฟ้า",
+				"funding_name": null
+			}
+		],
+		"other_college_enrollments": [],
+		"other_scholarships": [
+			{
+				"year": "2022",
+				"scholarship_name": "ทุนไม่เจาะจง",
+				"annual_amount": 4000
+			}
+		],
+		"job_histories": [],
+		"activity_list": "กิจกรรมจิตอาสา, การแข่งขันวิชาการระดับภาค, เข้าร่วมแข่งขันกีฬาสี, แข่งขันกิจกรรมทางวิชาการสานสัมพันธ์ยุพ-เตรียมทหาร"
+	},
+	"page5": {
+		"mapHandPath": "https://servicescholarship.eng.cmu.ac.th/image/staging/3261/mapHand/808487ff-e213-4886-8946-9a4d03da4d5a.jpg",
+		"houseAllPath": [
+			"https://servicescholarship.eng.cmu.ac.th/image/staging/3261/houseAll/16e5b423-c7ae-4b25-8f9f-7bbc5526afbd.jpg"
+		],
+		"houseFrontPath": [
+			"https://servicescholarship.eng.cmu.ac.th/image/staging/3261/houseFront/4b63a1d0-2fee-46b1-bf9a-1c53d3f9ac5a.jpg"
+		],
+		"houseLeftPath": [
+			"https://servicescholarship.eng.cmu.ac.th/image/staging/3261/houseLeft/4311abc1-0963-469d-840a-dd62ecd531e6.jpg"
+		],
+		"houseRightPath": [
+			"https://servicescholarship.eng.cmu.ac.th/image/staging/3261/houseRight/d64b6f79-0304-4b54-8427-55843e023494.jpg"
+		],
+		"houseBackPath": [
+			"https://servicescholarship.eng.cmu.ac.th/image/staging/3261/houseBack/483ac4fc-edbd-4c1d-92c4-eb54df6e44c5.jpg"
+		],
+		"bedroomPath": [
+			"https://servicescholarship.eng.cmu.ac.th/image/staging/3261/bedroom/0f7f4c12-bebd-41bd-99bb-e542dde8c60b.jpg"
+		],
+		"kitchenPath": [
+			"https://servicescholarship.eng.cmu.ac.th/image/staging/3261/kitchen/7dfda35b-8124-4496-b1e9-f6906a48ebc2.jpg"
+		],
+		"inHousePath": [
+			"https://servicescholarship.eng.cmu.ac.th/image/staging/3261/inHouse/9e2bb400-00f9-4516-80d6-5e44cb48b247.jpg",
+			"https://servicescholarship.eng.cmu.ac.th/image/staging/3261/inHouse/bc6a0ea9-83e4-4306-9717-dcc84e17b944.jpg",
+			"https://servicescholarship.eng.cmu.ac.th/image/staging/3261/inHouse/6b68c282-ce33-43ee-a3f8-416e91a04aa6.jpg"
+		]
+	},
+	"page6": {
+		"rationale": "ขาดแคลนทุนทรัพย์ด้านความเป็นอยู่ ถึงผมจะกู้ยืม กยศ. แต่ก็ยังไม่พอใช้ แม้จะประหยัด อย่างเต็มที่แล้ว ถ้าผมได้รับทุนนี้ ก็จะช่วยผมได้เป็นอย่างมากครับ ผมได้รับค่าครองชีพ 3000 จาก กยศ. เฉลี่ยวันละ 100 บาท แต่ค่าใช้จ่าย ค่าอาหาร ค่าเดินทาง ค่าของใช้ส่วนตัว ก็ยังไม่พอใช้ครับ",
+		"work_preference": "งานส่งเอกสาร ช่วยยกของ หรือ งานอื่นใด ก็ได้ ถ้าได้รับมอบหมาย ผมยินดีทำ อย่างสุดความสามารถครับ  สะดวกเวลาที่ไม่มีชั่วโมงเรียนครับ",
+		"payment_info": {
+			"acct_name": "นาย ภีระพัฒน์ บุญนัด",
+			"acct_number": "6674561303"
+		}
+	}
+}
